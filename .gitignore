@@ -1,0 +1,39 @@
+# Deployment secrets and generated state
+**/.env
+!**/.env.example
+deploy/backups/
+deploy/data/
+*.signing.key
+*.pem
+*.p12
+*.jks
+*.keystore
+key.properties
+
+# Release and push credentials. These are supplied per machine and per
+# environment; none of them may ever enter this repository.
+*.p8
+*.mobileprovision
+*.cer
+*.certSigningRequest
+google-services.json
+GoogleService-Info.plist
+# fastlane run output and any local overrides. The Fastfile and Appfile are
+# tracked deliberately: they carry the bundle id and lane logic, not secrets.
+# The only iOS secret is the .p8, which lives in ~/.appstoreconnect.
+**/fastlane/report.xml
+**/fastlane/README.md
+**/fastlane/.env*
+
+# Editor and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Python test caches
+__pycache__/
+*.py[cod]

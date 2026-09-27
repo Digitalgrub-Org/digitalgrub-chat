@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- Maskable variant. A maskable icon is cropped to a circle of 80% of the
+       canvas, which clips the accent dot in the full-bleed artwork, so the
+       mark is inset to the same 66% safe zone the Android adaptive layer uses. -->
+  <rect width="1024" height="1024" fill="#FFBE00"/>
+  <g transform="translate(512,512) scale(0.66) translate(-512,-512)">
+    <path fill="#0B2322"
+          d="M320 268h384c48.6 0 88 39.4 88 88v270c0 48.6-39.4 88-88 88H520l-128 116c-14 12.7-36 2.8-36-16V714h-36c-48.6 0-88-39.4-88-88V356c0-48.6 39.4-88 88-88z"/>
+    <circle cx="742" cy="286" r="104" fill="#FFBE00"/>
+    <circle cx="742" cy="286" r="78" fill="#FFFFFF"/>
+  </g>
+</svg>

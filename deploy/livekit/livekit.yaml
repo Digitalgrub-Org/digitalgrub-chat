@@ -1,0 +1,16 @@
+# LiveKit SFU for Digitalgrub Chat calls.
+# Signaling (7880) stays internal behind nginx at /livekit/sfu/.
+# Media: one muxed UDP port plus a TCP fallback for UDP-hostile networks.
+port: 7880
+bind_addresses: ["0.0.0.0"]
+rtc:
+  udp_port: 7882
+  tcp_port: 7881
+  use_external_ip: true
+room:
+  # Rooms are created only through the jwt service, which has checked the
+  # caller is a signed-in user of our homeserver. Without this, anyone with
+  # the SFU address could mint rooms.
+  auto_create: false
+logging:
+  level: info

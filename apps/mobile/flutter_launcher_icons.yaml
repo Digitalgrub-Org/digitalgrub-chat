@@ -1,0 +1,30 @@
+# Launcher icons for Digitalgrub Chat.
+#
+# Source artwork is assets/branding/app_icon.svg; the PNGs beside it are
+# rendered from it with rsvg-convert and are the inputs here. Regenerate with:
+#
+#   rsvg-convert -w 1024 -h 1024 assets/branding/app_icon.svg \
+#     -o assets/branding/app_icon.png
+#   dart run flutter_launcher_icons
+flutter_launcher_icons:
+  image_path: "assets/branding/app_icon.png"
+
+  android: "ic_launcher"
+  # Android may mask the icon to a circle or squircle, so the foreground is a
+  # separate layer inset into the 66% safe zone rather than the full-bleed
+  # artwork, which would lose its corners.
+  adaptive_icon_background: "#FFBE00"
+  adaptive_icon_foreground: "assets/branding/app_icon_foreground.png"
+  adaptive_icon_monochrome: "assets/branding/app_icon_foreground.png"
+
+  ios: true
+  # App Store rejects an icon with an alpha channel.
+  remove_alpha_ios: true
+
+  web:
+    generate: true
+    image_path: "assets/branding/app_icon.png"
+    # Deep teal matches the dark splash the app already uses; gold is the
+    # browser theme colour so the address bar picks up the brand.
+    background_color: "#0B2322"
+    theme_color: "#FFBE00"

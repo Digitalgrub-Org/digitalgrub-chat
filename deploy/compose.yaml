@@ -1,0 +1,213 @@
+name: digitalgrub-chat
+
+x-logging: &default-logging
+  driver: json-file
+  options:
+    max-size: 10m
+    max-file: "5"
+
+x-service-defaults: &service-defaults
+  restart: unless-stopped
+  init: true
+  security_opt:
+    - no-new-privileges:true
+  logging: *default-logging
+
+services:
+  postgres:
+    <<: *service-defaults
+    image: postgres:18.4-alpine
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:?Set POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER:?Set POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD}
+      SYNAPSE_DATA_DIR: /data
+      POSTGRES_INITDB_ARGS: --encoding=UTF8 --locale=C
+      TZ: ${TZ:-UTC}
+    volumes:
+      - postgres_data:/var/lib/postgresql
+    networks:
+      - internal
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - pg_isready -U "$${POSTGRES_USER}" -d "$${POSTGRES_DB}"
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+    shm_size: 256mb
+    deploy:
+      resources:
+        limits:
+          memory: 2g
+
+  synapse-config:
+    image: matrixdotorg/synapse:v1.157.2
+    restart: "no"
+    init: true
+    security_opt:
+      - no-new-privileges:true
+    logging: *default-logging
+    entrypoint:
+      - python
+      - /config/render_config.py
+    environment:
+      MATRIX_SERVER_NAME: ${MATRIX_SERVER_NAME:?Set MATRIX_SERVER_NAME}
+      MATRIX_PUBLIC_HOST: ${MATRIX_PUBLIC_HOST:?Set MATRIX_PUBLIC_HOST}
+      SYNAPSE_REPORT_STATS: ${SYNAPSE_REPORT_STATS:-no}
+      SYNAPSE_ENABLE_REGISTRATION: ${SYNAPSE_ENABLE_REGISTRATION:-false}
+      SYNAPSE_REGISTRATION_REQUIRES_TOKEN: ${SYNAPSE_REGISTRATION_REQUIRES_TOKEN:-false}
+      POSTGRES_DB: ${POSTGRES_DB:?Set POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER:?Set POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD}
+      # Outbound mail (password reset, email verification). All optional:
+      # with no SMTP host the rendered config has no email support, which is
+      # how this deployment ran before mail existed.
+      SYNAPSE_SMTP_HOST: ${SYNAPSE_SMTP_HOST:-}
+      SYNAPSE_SMTP_PORT: ${SYNAPSE_SMTP_PORT:-587}
+      SYNAPSE_SMTP_USER: ${SYNAPSE_SMTP_USER:-}
+      SYNAPSE_SMTP_PASS: ${SYNAPSE_SMTP_PASS:-}
+      SYNAPSE_EMAIL_FROM: ${SYNAPSE_EMAIL_FROM:-}
+    volumes:
+      - synapse_data:/data
+      - ./synapse:/config:ro
+    networks:
+      - internal
+
+  synapse:
+    <<: *service-defaults
+    image: matrixdotorg/synapse:v1.157.2
+    command:
+      - run
+      - --config-path=/data/homeserver.yaml
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - synapse_data:/data
+      - ./synapse/log.config:/config/log.config:ro
+    networks:
+      - internal
+      - monitoring
+    depends_on:
+      postgres:
+        condition: service_healthy
+      synapse-config:
+        condition: service_completed_successfully
+    healthcheck:
+      test:
+        - CMD
+        - curl
+        - -fSs
+        - http://localhost:8008/health
+      interval: 15s
+      timeout: 5s
+      retries: 10
+      start_period: 40s
+    stop_grace_period: 30s
+    deploy:
+      resources:
+        limits:
+          memory: 3g
+
+  caddy:
+    <<: *service-defaults
+    image: caddy:2.11.4-alpine
+    environment:
+      MATRIX_PUBLIC_HOST: ${MATRIX_PUBLIC_HOST:?Set MATRIX_PUBLIC_HOST}
+      CADDY_ACME_EMAIL: ${CADDY_ACME_EMAIL:?Set CADDY_ACME_EMAIL}
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    networks:
+      - edge
+      - internal
+    depends_on:
+      synapse:
+        condition: service_healthy
+    healthcheck:
+      test:
+        - CMD
+        - caddy
+        - validate
+        - --config
+        - /etc/caddy/Caddyfile
+        - --adapter
+        - caddyfile
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  backup:
+    <<: *service-defaults
+    image: postgres:18.4-alpine
+    entrypoint:
+      - /bin/sh
+      - /scripts/backup.sh
+    environment:
+      PGHOST: postgres
+      PGDATABASE: ${POSTGRES_DB:?Set POSTGRES_DB}
+      PGUSER: ${POSTGRES_USER:?Set POSTGRES_USER}
+      PGPASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD}
+      BACKUP_INTERVAL_SECONDS: ${BACKUP_INTERVAL_SECONDS:-86400}
+      BACKUP_RETENTION_DAYS: ${BACKUP_RETENTION_DAYS:-14}
+      TZ: ${TZ:-UTC}
+    volumes:
+      - backup_data:/backups
+      - ./backup/backup.sh:/scripts/backup.sh:ro
+    networks:
+      - internal
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - test -f /tmp/backup-healthy
+      interval: 1m
+      timeout: 5s
+      retries: 3
+      start_period: 2m
+
+  sygnal:
+    <<: *service-defaults
+    image: matrixdotorg/sygnal:v0.17.0
+    profiles:
+      - push
+    environment:
+      SYGNAL_CONF: /sygnal/sygnal.yaml
+    volumes:
+      - ./sygnal/sygnal.yaml:/sygnal/sygnal.yaml:ro
+    networks:
+      - edge
+      - internal
+      - monitoring
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - import socket; s=socket.create_connection(('127.0.0.1',5000),2); s.close()
+      interval: 30s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+volumes:
+  postgres_data:
+  synapse_data:
+  caddy_data:
+  caddy_config:
+  backup_data:
+
+networks:
+  edge:
+  internal:
+    internal: true
+  monitoring:
+    internal: true

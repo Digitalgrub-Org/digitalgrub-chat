@@ -1,0 +1,14 @@
+Digitalgrub Chat
+Copyright (C) 2026 Digitalgrub India Private Limited
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU Affero General Public License as published by the Free
+Software Foundation, version 3. See LICENSE.
+
+The Digitalgrub name, the Digitalgrub Chat name and the app icon belong to
+Digitalgrub India Private Limited and are not licensed under the AGPL. If you
+ship a modified version, give it your own name, icon and application id.
+
+This program is built on the Matrix Dart SDK by Famedly GmbH, itself licensed
+under the GNU AGPL-3.0, and on other open-source packages listed in
+apps/mobile/pubspec.lock, each under its own licence.

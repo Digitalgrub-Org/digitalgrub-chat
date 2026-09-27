@@ -1,0 +1,655 @@
+{
+  "@@locale": "en",
+  "appName": "Digitalgrub Chat",
+  "appTagline": "Your conversations, on your server.",
+  "onboardingFastTitle": "Fast, focused conversations",
+  "onboardingFastBody": "Move from a quick hello to a real conversation without getting in your way.",
+  "onboardingOfflineTitle": "Messages stay close",
+  "onboardingOfflineBody": "Open recent conversations and prepare replies even when your connection drops.",
+  "onboardingHostedTitle": "Hosted by Digitalgrub",
+  "onboardingHostedBody": "Your chat service runs on infrastructure controlled by Digitalgrub, not a paid chat platform.",
+  "skip": "Skip",
+  "continueLabel": "Continue",
+  "getStarted": "Get started",
+  "loginTitle": "Welcome back",
+  "loginSubtitle": "Sign in to continue your conversations.",
+  "username": "Username",
+  "password": "Password",
+  "signIn": "Sign in",
+  "createAccount": "Create account",
+  "forgotPassword": "Forgot password?",
+  "registrationTitle": "Create your account",
+  "displayName": "Display name",
+  "optionalMobileNumber": "Mobile number (optional)",
+  "mobileNumberPrivacyHint": "Stored privately for your account. SMS login is not enabled yet.",
+  "requiredField": "This field is required.",
+  "usernameValidation": "Use 3–32 lowercase letters, numbers, dots, underscores, equals signs, or hyphens.",
+  "passwordValidation": "Use at least {count} characters.",
+  "mobileNumberValidation": "Enter a valid mobile number.",
+  "signingIn": "Signing in…",
+  "creatingAccount": "Creating account…",
+  "invalidCredentials": "The username or password is incorrect.",
+  "registrationDisabled": "New account registration is currently disabled.",
+  "usernameTaken": "That username is already in use.",
+  "invalidUsername": "That username is not allowed.",
+  "rateLimited": "Too many attempts. Please try again shortly.",
+  "serverUnavailable": "Digitalgrub Chat cannot reach the server right now.",
+  "sessionExpired": "Your session has expired. Please sign in again.",
+  "unknownAuthenticationError": "Authentication failed. Please try again.",
+  "profileSetupIncomplete": "Your account was created, but some profile details could not be saved.",
+  "startupFailed": "Digitalgrub Chat could not initialize.",
+  "retry": "Retry",
+  "logOut": "Log out",
+  "loggingOut": "Logging out…",
+  "logOutConfirmation": "Log out of Digitalgrub Chat on this device?",
+  "cancel": "Cancel",
+  "chats": "Chats",
+  "contacts": "Contacts",
+  "settings": "Settings",
+  "startNewChat": "Start new chat",
+  "createGroup": "Create group",
+  "noConversationsTitle": "No conversations yet",
+  "noConversationsBody": "Find someone or create a private group to begin.",
+  "findPeople": "Find people",
+  "noContactsTitle": "Your people will appear here",
+  "noContactsBody": "Search by username or display name.",
+  "appearance": "Appearance",
+  "notificationPreviews": "Message previews",
+  "notificationPreviewsSubtitle": "Show who wrote and what they said in notifications",
+  "themeSystem": "Use device setting",
+  "themeLight": "Light",
+  "themeDark": "Dark",
+  "searchPeople": "Search people",
+  "newGroup": "New group",
+  "groupDetails": "Group details",
+  "userProfile": "User profile",
+  "blockedUsers": "Blocked users",
+  "close": "Close",
+  "voiceRecord": "Record a voice message",
+  "voicePlay": "Play",
+  "voicePause": "Pause",
+  "voiceDiscard": "Discard recording",
+  "voiceRecording": "Recording…",
+  "voiceSendFailed": "Could not send the voice message.",
+  "newMeeting": "New meeting",
+  "meetingDefaultTitle": "Digitalgrub meeting",
+  "meetingReady": "Your meeting is ready",
+  "meetingShareHint": "Anyone on the team who opens this link joins the meeting.",
+  "copyLink": "Copy link",
+  "linkCopied": "Link copied",
+  "emailInvite": "Email invite",
+  "joinNow": "Join now",
+  "meetingCreateFailed": "Could not create the meeting.",
+  "meetJoining": "Joining the meeting…",
+  "meetLinkDead": "This meeting link does not work any more.",
+  "meetJoinFailed": "Could not join the meeting.",
+  "meetingInviteSubject": "Join my meeting on Digitalgrub Chat",
+  "meetingInviteBody": "Join my meeting on Digitalgrub Chat:\n\n{link}\n\nOpen the link and sign in — you will land straight in the call.",
+  "@meetingInviteBody": {
+    "placeholders": {
+      "link": {
+        "type": "String"
+      }
+    }
+  },
+  "startCall": "Voice call",
+  "startVideoCall": "Video call",
+  "incomingCallFrom": "{name} is calling",
+  "@incomingCallFrom": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "callAcceptAudio": "Answer",
+  "callAcceptVideo": "Answer with video",
+  "callDecline": "Decline",
+  "callHangUp": "Hang up",
+  "callMuteMic": "Mute",
+  "callUnmuteMic": "Unmute",
+  "callCameraOn": "Camera on",
+  "callCameraOff": "Camera off",
+  "callSwitchCamera": "Switch camera",
+  "callSpeaker": "Speaker",
+  "readBy": "Read by {names}",
+  "@readBy": {
+    "placeholders": {
+      "names": {
+        "type": "String"
+      }
+    }
+  },
+  "mentionEveryoneHint": "Notifies everyone in this group",
+  "callReact": "React",
+  "callShareScreen": "Share screen",
+  "callStopSharing": "Stop sharing",
+  "callSomeoneSharing": "Someone is sharing their screen",
+  "callConnecting": "Connecting…",
+  "callReconnecting": "Reconnecting…",
+  "callWaitingForOthers": "Waiting for others to join…",
+  "callFailed": "The call could not be connected.",
+  "callPermissionDenied": "Microphone or camera access was denied. Allow it in system settings to make calls.",
+  "callParticipantCount": "{count} in call",
+  "@callParticipantCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "messagesSection": "Messages",
+  "noMessagesFound": "No messages found",
+  "messageSearchFailed": "Message search is unavailable right now.",
+  "attachmentUnavailable": "Image unavailable",
+  "attachmentFile": "File",
+  "attachmentPhoto": "Photo",
+  "attachmentVideo": "Video",
+  "attachmentAudio": "Audio",
+  "attachmentVoice": "Voice message",
+  "sendPhoto": "Photo",
+  "sendFile": "File",
+  "takePhoto": "Camera",
+  "attachmentTooLarge": "That file is too large to send.",
+  "attachmentSendFailed": "Could not send that file.",
+  "searchConversations": "Search conversations",
+  "noMatchingConversations": "No conversations match your search.",
+  "noMessagesYet": "No messages yet",
+  "chatListFailed": "Your cached conversations could not be opened.",
+  "peopleSearchHint": "Name or @username:server",
+  "peopleSearchInstructions": "Enter at least two characters to find someone by display name or username.",
+  "noPeopleFound": "No people found.",
+  "peopleSearchFailed": "People search is unavailable right now. Please try again.",
+  "messageInputHint": "Message",
+  "formatBold": "Bold",
+  "formatItalic": "Italic",
+  "formatStrikethrough": "Strikethrough",
+  "formatCode": "Code",
+  "insertEmoji": "Insert emoji",
+  "emojiSearchHint": "Search emoji",
+  "sendMessage": "Send message",
+  "messageSendFailed": "Message could not be sent. Your text has been restored.",
+  "messageLoadFailed": "This conversation could not be opened.",
+  "messagesWaitingToSend": "Messages waiting to send",
+  "messagesFailedToSend": "Messages failed to send",
+  "connecting": "Connecting…",
+  "synchronizing": "Synchronizing…",
+  "online": "Online",
+  "offlineCachedContent": "Offline — showing saved conversations",
+  "historyLoadFailed": "Older messages could not be loaded.",
+  "reply": "Reply",
+  "react": "React",
+  "editMessage": "Edit message",
+  "deleteMessage": "Delete message",
+  "copyMessage": "Copy",
+  "messageDetails": "Message details",
+  "reportMessage": "Report",
+  "deleteForMe": "Delete for me",
+  "deleteForEveryone": "Delete for everyone",
+  "deleteMessageConfirmation": "Choose how this message should be removed.",
+  "copiedToClipboard": "Message copied.",
+  "edited": "edited",
+  "messageDeleted": "Message deleted",
+  "replyingTo": "Replying to",
+  "editingMessage": "Editing message",
+  "typing": "typing…",
+  "read": "Read",
+  "chooseReaction": "Choose a reaction",
+  "messageActionFailed": "That message action could not be completed.",
+  "groupNameLabel": "Group name",
+  "groupNameHint": "Product crew",
+  "groupDescriptionLabel": "Description (optional)",
+  "groupDescriptionHint": "What is this group for?",
+  "groupNameRequired": "Enter a group name.",
+  "groupNameTooLong": "Group names can be at most {count} characters.",
+  "@groupNameTooLong": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "groupDescriptionTooLong": "Descriptions can be at most {count} characters.",
+  "@groupDescriptionTooLong": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "addPeople": "Add people",
+  "selectedCount": "{count} selected",
+  "@selectedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "memberCount": "{count, plural, =1{1 member} other{{count} members}}",
+  "@memberCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "creatingGroup": "Creating group…",
+  "groupMemberLimitReached": "A group can hold up to {count} people.",
+  "@groupMemberLimitReached": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "selectAtLeastOneMember": "Select at least one person to add.",
+  "groupCreationFailed": "The group could not be created. Please try again.",
+  "members": "Members",
+  "addMembers": "Add members",
+  "removeFromGroup": "Remove from group",
+  "removeMemberConfirmation": "Remove {name} from this group?",
+  "@removeMemberConfirmation": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "remove": "Remove",
+  "leaveGroup": "Leave group",
+  "leaveGroupConfirmation": "Leave this group? You will stop receiving its messages.",
+  "leave": "Leave",
+  "editGroupName": "Edit group name",
+  "editGroupDescription": "Edit description",
+  "save": "Save",
+  "roleAdmin": "Admin",
+  "roleModerator": "Moderator",
+  "roleMember": "Member",
+  "changeRole": "Change role",
+  "invited": "Invited",
+  "you": "You",
+  "noGroupDescription": "No description yet.",
+  "groupDetailsFailed": "Group details could not be opened.",
+  "groupUpdateFailed": "That group change could not be saved.",
+  "groupNotPermitted": "You do not have permission to do that.",
+  "groupNotFound": "This group is no longer available.",
+  "invitationsSent": "Invitations sent.",
+  "myProfile": "My profile",
+  "about": "About",
+  "noAboutYet": "No about text yet.",
+  "matrixUsername": "Username",
+  "mobileNumber": "Mobile number",
+  "noMobileNumber": "Not added",
+  "mobileNumberUnverified": "Not verified",
+  "changePhoto": "Change photo",
+  "removePhoto": "Remove photo",
+  "photoUpdated": "Photo updated.",
+  "photoTooLarge": "That image is too large. Choose a smaller one.",
+  "photoPickFailed": "That image could not be opened.",
+  "displayNameRequired": "Enter a display name.",
+  "aboutTooLong": "About text can be at most {count} characters.",
+  "@aboutTooLong": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profileLoadFailed": "This profile could not be opened.",
+  "profileUpdateFailed": "That profile change could not be saved.",
+  "profileNotFound": "That user could not be found.",
+  "sendMessageTo": "Message",
+  "blockUser": "Block user",
+  "unblockUser": "Unblock",
+  "blockUserConfirmation": "Block {name}? You will stop seeing their messages and they cannot start new chats with you.",
+  "@blockUserConfirmation": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "block": "Block",
+  "userBlocked": "User blocked.",
+  "userUnblocked": "User unblocked.",
+  "blockFailed": "That block change could not be saved.",
+  "noBlockedUsers": "You have not blocked anyone.",
+  "noBlockedUsersBody": "People you block will appear here so you can unblock them later.",
+  "blockedUsersFailed": "Your blocked users could not be loaded.",
+  "blockedMessageHidden": "Message from a blocked user",
+  "reportUser": "Report user",
+  "reportCategory": "What is the problem?",
+  "reportSpam": "Spam",
+  "reportHarassment": "Harassment",
+  "reportAbuse": "Abuse",
+  "reportFraud": "Fraud",
+  "reportInappropriate": "Inappropriate content",
+  "reportOther": "Other",
+  "reportComment": "Anything else we should know? (optional)",
+  "submitReport": "Submit report",
+  "reportSubmitted": "Report submitted. Thank you.",
+  "reportFailed": "That report could not be submitted. Please try again.",
+  "reportCommentTooLong": "Comments can be at most {count} characters.",
+  "@reportCommentTooLong": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "alsoBlockUser": "Also block this user",
+  "deleteAccount": "Delete account",
+  "deleteAccountWarning": "This permanently deletes your Digitalgrub Chat account. Your username can never be used again, and your messages will be removed where the server is able to remove them. This cannot be undone.",
+  "deleteAccountPasswordPrompt": "Enter your password to confirm.",
+  "deletingAccount": "Deleting account…",
+  "deleteAccountFailed": "Your account could not be deleted. Please try again.",
+  "accountDeleted": "Your account has been deleted.",
+  "confirmDelete": "Delete",
+  "contentAgreementTitle": "Our community rules",
+  "contentAgreementBody": "Digitalgrub Chat carries messages written by other people. There is no tolerance for abusive, hateful, or illegal content, or for harassing other members.",
+  "contentAgreementReport": "Report any message or person that breaks these rules. We review reports and act within 24 hours.",
+  "contentAgreementBlock": "Block anyone you do not want to hear from. Their messages disappear from your app immediately.",
+  "contentAgreementContact": "Questions or concerns: {email}",
+  "@contentAgreementContact": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "contentAgreementAccept": "I agree",
+  "contentAgreementDecline": "Not now",
+  "rulesConsent": "I agree to the community rules",
+  "rulesConsentRead": "Read the community rules",
+  "contentAgreementRequired": "You need to accept the community rules before sending messages.",
+  "invitedYou": "{name} invited you to chat",
+  "@invitedYou": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "invitedYouGeneric": "You have been invited to chat",
+  "acceptInvite": "Accept",
+  "declineInvite": "Decline",
+  "declineInviteConfirmation": "Decline this invitation? You will not see their messages.",
+  "inviteAccepted": "Invitation accepted.",
+  "inviteDeclined": "Invitation declined.",
+  "inviteActionFailed": "That invitation could not be updated. Please try again.",
+  "newMessageNotification": "New message",
+  "newMessage": "New message",
+  "selectConversationTitle": "Pick up a conversation",
+  "selectConversationBody": "Choose one from the list, or start a new one.",
+  "@passwordValidation": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "userManagement": "User management",
+  "inviteCodeLabel": "Invite code",
+  "inviteCodeHint": "Ask your admin for a code. Digitalgrub Chat is invite-only.",
+  "invalidInviteCode": "That invite code isn't valid or has already been used.",
+  "refresh": "Refresh",
+  "userManagementCount": "{total} accounts",
+  "@userManagementCount": {
+    "placeholders": {
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "forwardMessage": "Forward",
+  "forwardTo": "Forward to",
+  "forwarded": "Forwarded",
+  "forwardNoChats": "No other chats to forward to.",
+  "forwardedLabel": "Forwarded",
+  "pinMessage": "Pin",
+  "unpinMessage": "Unpin",
+  "pinnedMessage": "Pinned message",
+  "pinnedCount": "Pinned {index} of {total}",
+  "@pinnedCount": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "pinNotAllowed": "You don't have permission to pin messages in this chat. Ask a group admin.",
+  "pinFailed": "Couldn't change the pinned messages. Try again.",
+  "enableNotificationsPrompt": "Get notified when a message arrives while this tab is in the background.",
+  "enableNotifications": "Turn on",
+  "notificationsBlocked": "Your browser is blocking notifications for this site. Turn them on in its site settings.",
+  "dismiss": "Dismiss",
+  "returnToCall": "Tap to return to your call",
+  "onACallNow": "On a call now",
+  "joinCall": "Join",
+  "liveCallParticipants": "{count} on the call",
+  "@liveCallParticipants": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "callStartedBy": "{name} started a call",
+  "@callStartedBy": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "youStartedCall": "You started a call",
+  "missedCall": "Missed call",
+  "callBack": "Call back",
+  "someoneInCall": "Someone's in a call — tap to join",
+  "messageActions": "More",
+  "meetGuestTitle": "Join this meeting",
+  "meetGuestNameLabel": "Your name",
+  "meetJoinAsGuest": "Join meeting",
+  "meetSignInInstead": "Sign in instead",
+  "incomingCall": "Incoming call",
+  "groupActivity": "Activity",
+  "groupActivityEmpty": "Nothing has happened here yet.",
+  "activityCreated": "{name} created the group",
+  "@activityCreated": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "activityJoined": "{name} joined",
+  "@activityJoined": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "activityLeft": "{name} left",
+  "@activityLeft": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "activityInvited": "{name} invited {target}",
+  "@activityInvited": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "target": {
+        "type": "String"
+      }
+    }
+  },
+  "activityRemoved": "{name} removed {target}",
+  "@activityRemoved": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "target": {
+        "type": "String"
+      }
+    }
+  },
+  "activityRenamed": "{name} named the group “{detail}”",
+  "@activityRenamed": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "activityPhotoChanged": "{name} changed the group photo",
+  "@activityPhotoChanged": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "activityCallStarted": "{name} started a call",
+  "@activityCallStarted": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "activityPinsChanged": "{name} changed the pinned messages",
+  "@activityPinsChanged": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "activityRolesChanged": "{name} changed member roles",
+  "@activityRolesChanged": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "resetPasswordTitle": "Reset your password",
+  "resetPasswordSubtitle": "Enter the email address on your account and we will send you a link.",
+  "emailAddress": "Email address",
+  "emailValidation": "Enter a valid email address",
+  "sendResetLink": "Send reset link",
+  "sendingResetLink": "Sending…",
+  "resetLinkSentTitle": "Check your email",
+  "resetLinkSentBody": "If {email} is on an account, a link is on its way. Open it, then come back here and set your new password.",
+  "@resetLinkSentBody": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "resendResetLink": "Send it again",
+  "resetLinkResent": "Sent again. It can take a minute to arrive.",
+  "newPassword": "New password",
+  "confirmNewPassword": "Confirm new password",
+  "passwordsDoNotMatch": "Those two passwords are different",
+  "setNewPassword": "Set new password",
+  "passwordResetDone": "Password changed. Sign in with the new one.",
+  "emailNotVerified": "Open the link in the email first, then try again.",
+  "emailNotConfigured": "This server cannot send email yet. Ask your admin to reset it for you.",
+  "emailInUse": "Another account already uses that address.",
+  "emailAddresses": "Email address",
+  "emailAddressesSubtitle": "Used only to reset your password",
+  "noEmailAddress": "No email address yet. Without one, only an admin can reset your password.",
+  "addEmailAddress": "Add email address",
+  "removeEmailAddress": "Remove",
+  "emailAddressAdded": "Email address added.",
+  "emailAddressRemoved": "Email address removed.",
+  "confirmWithPassword": "Confirm with your password",
+  "currentPassword": "Current password",
+  "verifyEmailSent": "We sent a link to {email}. Open it, then confirm below.",
+  "@verifyEmailSent": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "confirmEmail": "I have opened the link",
+  "callFullScreen": "Full screen",
+  "callExitFullScreen": "Exit full screen",
+  "callChat": "Chat",
+  "callCloseChat": "Close chat",
+  "callRaiseHand": "Raise hand",
+  "callLowerHand": "Lower hand",
+  "callPeople": "People",
+  "callMute": "Mute",
+  "callMuteAll": "Mute all",
+  "callHandRaised": "Hand raised",
+  "callYou": "{name} (you)",
+  "@callYou": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "adminNewUser": "New user",
+  "adminNewUserTitle": "Create an account",
+  "adminNewUserHint": "They sign in with this username and password. Share the password with them yourself; it is not sent anywhere.",
+  "adminCreateUser": "Create",
+  "adminUserCreated": "Account created: {userId}",
+  "adminResetPassword": "Reset password",
+  "adminResetPasswordTitle": "Reset password for {name}",
+  "adminResetPasswordHint": "Every session they have is signed out. Tell them the new password yourself.",
+  "adminPasswordReset": "Password reset. Their sessions were signed out.",
+  "adminNotAdmin": "Only a server admin can do this. Sign in again as the admin account.",
+  "adminUsernameTaken": "Somebody already has that username.",
+  "adminAccountOnServer": "Admin accounts are reset on the server, not from here.",
+  "adminUserNotFound": "No account with that username.",
+  "adminUnavailable": "Admin actions are switched off in this build.",
+  "adminActions": "More",
+  "@adminUserCreated": {
+    "placeholders": {
+      "userId": {
+        "type": "String"
+      }
+    }
+  },
+  "@adminResetPasswordTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "presenceOnline": "Online",
+  "presenceLastSeen": "Last seen {when}",
+  "@presenceLastSeen": {
+    "placeholders": {
+      "when": {
+        "type": "String"
+      }
+    }
+  },
+  "meet": "Meet",
+  "joinWithCode": "Join with a code",
+  "meetingCodeHint": "Paste a meeting link or code",
+  "meetingCodeInvalid": "That is not a meeting link or code.",
+  "shareLink": "Share",
+  "joinMeeting": "Join"
+}

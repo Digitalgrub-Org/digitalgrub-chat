@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- Digitalgrub Chat app icon.
+       Palette from digitalgrub.in: gold #FFBE00, deep teal #0B2322.
+       Full-bleed gold so the same artwork works as an Android adaptive
+       background; the mark sits inside the 66% safe zone so nothing is lost
+       when the launcher applies a circular or squircle mask. -->
+  <rect width="1024" height="1024" fill="#FFBE00"/>
+
+  <!-- Speech bubble, drawn rather than reusing the UI glyph: an icon needs
+       more optical weight than a 24dp Material symbol carries. -->
+  <path fill="#0B2322"
+        d="M320 268h384c48.6 0 88 39.4 88 88v270c0 48.6-39.4 88-88 88H520l-128 116c-14 12.7-36 2.8-36-16V714h-36c-48.6 0-88-39.4-88-88V356c0-48.6 39.4-88 88-88z"/>
+
+  <!-- The accent dot doubles as the unread indicator used in the app's
+       BrandMark, so the launcher icon and the in-app mark read as one thing. -->
+  <circle cx="742" cy="286" r="104" fill="#FFBE00"/>
+  <circle cx="742" cy="286" r="78" fill="#FFFFFF"/>
+</svg>

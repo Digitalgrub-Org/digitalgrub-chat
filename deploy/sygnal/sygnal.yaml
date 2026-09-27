@@ -1,0 +1,60 @@
+log:
+  setup:
+    version: 1
+    formatters:
+      normal:
+        format: "%(asctime)s %(levelname)s %(name)s %(message)s"
+    handlers:
+      stdout:
+        class: logging.StreamHandler
+        formatter: normal
+        stream: ext://sys.stdout
+    root:
+      handlers: [stdout]
+      level: INFO
+    disable_existing_loggers: false
+  # Nested under `log` deliberately: Sygnal ignores a top-level `access`
+  # block and warns that the section is not understood. Enabled because a
+  # reverse proxy always fronts this, so the real client address arrives in
+  # X-Forwarded-For.
+  access:
+    x_forwarded_for: true
+
+http:
+  bind_addresses: ['0.0.0.0']
+  port: 5000
+
+metrics:
+  prometheus:
+    enabled: true
+    address: '0.0.0.0'
+    port: 8000
+  opentracing:
+    enabled: false
+  sentry:
+    enabled: false
+
+# App entries carry credentials, so they are supplied by a deployment-only
+# mounted file rather than living here. Both platforms are configured as `gcm`
+# against the same Firebase project:
+#
+#   com.digitalgrub.chat.android:
+#     type: gcm
+#     api_version: v1
+#     project_id: <firebase project>
+#     service_account_file: /secrets/fcm-service-account.json
+#   com.digitalgrub.chat.ios:
+#     type: gcm            # same shape; FCM forwards to APNs
+#     ...
+#
+# iOS deliberately goes through FCM instead of `type: apns`. Sygnal's
+# event_id_only APNs payload contains no `aps.alert`, so a direct APNs push is
+# silent and only a Notification Service Extension could render it. This app
+# renders notifications in Dart from the FCM background handler, which runs
+# only for genuine FCM messages. Switching to direct APNs means adding an NSE
+# target to the iOS app, and it requires the client to register the raw APNs
+# device token rather than the FCM token.
+#
+# FCM delivers to iOS only once the APNs auth key is uploaded to the Firebase
+# project under Cloud Messaging.
+apps: {}

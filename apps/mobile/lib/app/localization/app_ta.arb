@@ -1,0 +1,564 @@
+{
+  "@@locale": "ta",
+  "appName": "டிஜிட்டல்க்ரப் சாட்",
+  "appTagline": "உங்கள் உரையாடல்கள், உங்கள் சேவையகத்தில்.",
+  "onboardingFastTitle": "வேகமான, நேர்த்தியான உரையாடல்கள்",
+  "onboardingFastBody": "எந்தத் தடையும் இல்லாமல் ஒரு வணக்கத்திலிருந்து அர்த்தமுள்ள உரையாடலுக்கு செல்லுங்கள்.",
+  "onboardingOfflineTitle": "செய்திகள் உங்களுடனே இருக்கும்",
+  "onboardingOfflineBody": "இணைப்பு துண்டிக்கப்பட்டாலும் சமீபத்திய உரையாடல்களைத் திறந்து பதில்களைத் தயாரிக்கலாம்.",
+  "onboardingHostedTitle": "டிஜிட்டல்க்ரப் வழங்குகிறது",
+  "onboardingHostedBody": "கட்டண அரட்டை தளத்தில் அல்லாமல், டிஜிட்டல்க்ரப் கட்டுப்பாட்டிலுள்ள கட்டமைப்பில் உங்கள் அரட்டை இயங்குகிறது.",
+  "skip": "தவிர்",
+  "continueLabel": "தொடர்க",
+  "getStarted": "தொடங்குங்கள்",
+  "loginTitle": "மீண்டும் வரவேற்கிறோம்",
+  "loginSubtitle": "உங்கள் உரையாடல்களைத் தொடர உள்நுழையுங்கள்.",
+  "username": "பயனர்பெயர்",
+  "password": "கடவுச்சொல்",
+  "signIn": "உள்நுழை",
+  "createAccount": "கணக்கை உருவாக்கு",
+  "forgotPassword": "கடவுச்சொல் மறந்துவிட்டதா?",
+  "registrationTitle": "உங்கள் கணக்கை உருவாக்குங்கள்",
+  "displayName": "காட்சிப் பெயர்",
+  "optionalMobileNumber": "கைபேசி எண் (விருப்பம்)",
+  "mobileNumberPrivacyHint": "உங்கள் கணக்கிற்காகத் தனிப்பட்ட முறையில் சேமிக்கப்படும். குறுஞ்செய்தி உள்நுழைவு இன்னும் இயக்கப்படவில்லை.",
+  "requiredField": "இந்தப் புலம் அவசியம்.",
+  "usernameValidation": "3–32 சிற்றெழுத்துகள், எண்கள், புள்ளிகள், அடிக்கோடுகள், சமக்குறிகள் அல்லது இணைப்புக்குறிகளைப் பயன்படுத்துங்கள்.",
+  "passwordValidation": "குறைந்தது {count} எழுத்துகளைப் பயன்படுத்துங்கள்.",
+  "mobileNumberValidation": "செல்லுபடியாகும் கைபேசி எண்ணை உள்ளிடுங்கள்.",
+  "signingIn": "உள்நுழைகிறது…",
+  "creatingAccount": "கணக்கை உருவாக்குகிறது…",
+  "invalidCredentials": "பயனர்பெயர் அல்லது கடவுச்சொல் தவறானது.",
+  "registrationDisabled": "புதிய கணக்குப் பதிவு தற்போது முடக்கப்பட்டுள்ளது.",
+  "usernameTaken": "அந்தப் பயனர்பெயர் ஏற்கனவே பயன்பாட்டில் உள்ளது.",
+  "invalidUsername": "அந்தப் பயனர்பெயர் அனுமதிக்கப்படவில்லை.",
+  "rateLimited": "அதிக முயற்சிகள் செய்யப்பட்டன. சிறிது நேரம் கழித்து மீண்டும் முயலுங்கள்.",
+  "serverUnavailable": "டிஜிட்டல்க்ரப் சாட் தற்போது சேவையகத்தை அணுக முடியவில்லை.",
+  "sessionExpired": "உங்கள் அமர்வு காலாவதியானது. மீண்டும் உள்நுழையுங்கள்.",
+  "unknownAuthenticationError": "அங்கீகாரம் தோல்வியடைந்தது. மீண்டும் முயலுங்கள்.",
+  "profileSetupIncomplete": "உங்கள் கணக்கு உருவாக்கப்பட்டது, ஆனால் சில சுயவிவர விவரங்களைச் சேமிக்க முடியவில்லை.",
+  "startupFailed": "டிஜிட்டல்க்ரப் சாட்டைத் தொடங்க முடியவில்லை.",
+  "retry": "மீண்டும் முயல்",
+  "logOut": "வெளியேறு",
+  "loggingOut": "வெளியேறுகிறது…",
+  "logOutConfirmation": "இந்தச் சாதனத்தில் டிஜிட்டல்க்ரப் சாட்டிலிருந்து வெளியேறவா?",
+  "cancel": "ரத்துசெய்",
+  "chats": "அரட்டைகள்",
+  "contacts": "தொடர்புகள்",
+  "settings": "அமைப்புகள்",
+  "startNewChat": "புதிய அரட்டையைத் தொடங்கு",
+  "createGroup": "குழுவை உருவாக்கு",
+  "noConversationsTitle": "இன்னும் உரையாடல்கள் இல்லை",
+  "noConversationsBody": "ஒருவரைக் கண்டறியுங்கள் அல்லது தனிப்பட்ட குழுவை உருவாக்குங்கள்.",
+  "findPeople": "நபர்களைக் கண்டறி",
+  "noContactsTitle": "உங்கள் தொடர்புகள் இங்கே தோன்றும்",
+  "noContactsBody": "பயனர்பெயர் அல்லது காட்சிப் பெயரால் தேடுங்கள்.",
+  "appearance": "தோற்றம்",
+  "notificationPreviews": "செய்தி முன்னோட்டம்",
+  "notificationPreviewsSubtitle": "அறிவிப்புகளில் அனுப்பியவர் பெயரையும் செய்தியையும் காட்டு",
+  "themeSystem": "சாதன அமைப்பைப் பயன்படுத்து",
+  "themeLight": "வெளிச்சம்",
+  "themeDark": "இருள்",
+  "searchPeople": "நபர்களைத் தேடு",
+  "newGroup": "புதிய குழு",
+  "groupDetails": "குழு விவரங்கள்",
+  "userProfile": "பயனர் சுயவிவரம்",
+  "blockedUsers": "தடுக்கப்பட்ட பயனர்கள்",
+  "close": "மூடு",
+  "voiceRecord": "குரல் செய்தி பதிவு",
+  "voicePlay": "இயக்கு",
+  "voicePause": "இடைநிறுத்து",
+  "voiceDiscard": "பதிவை நீக்கு",
+  "voiceRecording": "பதிவாகிறது…",
+  "voiceSendFailed": "குரல் செய்தியை அனுப்ப முடியவில்லை.",
+  "newMeeting": "புதிய கூட்டம்",
+  "meetingDefaultTitle": "டிஜிட்டல்கிரப் கூட்டம்",
+  "meetingReady": "உங்கள் கூட்டம் தயார்",
+  "meetingShareHint": "இந்த இணைப்பைத் திறக்கும் குழு உறுப்பினர்கள் நேரடியாக கூட்டத்தில் சேருவார்கள்.",
+  "copyLink": "இணைப்பை நகலெடு",
+  "linkCopied": "இணைப்பு நகலெடுக்கப்பட்டது",
+  "emailInvite": "மின்னஞ்சல் அழைப்பு",
+  "joinNow": "இப்போது சேர்",
+  "meetingCreateFailed": "கூட்டத்தை உருவாக்க முடியவில்லை.",
+  "meetJoining": "கூட்டத்தில் சேர்கிறது…",
+  "meetLinkDead": "இந்தக் கூட்ட இணைப்பு இனி செயல்படாது.",
+  "meetJoinFailed": "கூட்டத்தில் சேர முடியவில்லை.",
+  "meetingInviteSubject": "டிஜிட்டல்கிரப் சாட்டில் என் கூட்டத்தில் சேருங்கள்",
+  "meetingInviteBody": "டிஜிட்டல்கிரப் சாட்டில் என் கூட்டத்தில் சேருங்கள்:\n\n{link}\n\nஇணைப்பைத் திறந்து உள்நுழையுங்கள் — நேரடியாக அழைப்பில் சேர்வீர்கள்.",
+  "@meetingInviteBody": {
+    "placeholders": {
+      "link": {
+        "type": "String"
+      }
+    }
+  },
+  "startCall": "குரல் அழைப்பு",
+  "startVideoCall": "காணொளி அழைப்பு",
+  "incomingCallFrom": "{name} அழைக்கிறார்",
+  "@incomingCallFrom": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "callAcceptAudio": "பதிலளி",
+  "callAcceptVideo": "காணொளியுடன் பதிலளி",
+  "callDecline": "நிராகரி",
+  "callHangUp": "துண்டி",
+  "callMuteMic": "ஒலி நிறுத்து",
+  "callUnmuteMic": "ஒலி இயக்கு",
+  "callCameraOn": "கேமரா இயக்கு",
+  "callCameraOff": "கேமரா நிறுத்து",
+  "callSwitchCamera": "கேமரா மாற்று",
+  "callSpeaker": "ஒலிபெருக்கி",
+  "readBy": "{names} படித்துள்ளார்",
+  "@readBy": {
+    "placeholders": {
+      "names": {
+        "type": "String"
+      }
+    }
+  },
+  "mentionEveryoneHint": "இந்தக் குழுவில் உள்ள அனைவருக்கும் அறிவிக்கும்",
+  "callReact": "எமோஜி அனுப்பு",
+  "callShareScreen": "திரையைப் பகிர்",
+  "callStopSharing": "பகிர்வை நிறுத்து",
+  "callSomeoneSharing": "ஒருவர் தங்கள் திரையைப் பகிர்கிறார்",
+  "callConnecting": "இணைக்கிறது…",
+  "callReconnecting": "மீண்டும் இணைக்கிறது…",
+  "callWaitingForOthers": "மற்றவர்கள் சேரக் காத்திருக்கிறது…",
+  "callFailed": "அழைப்பை இணைக்க முடியவில்லை.",
+  "callPermissionDenied": "மைக் அல்லது கேமரா அனுமதி மறுக்கப்பட்டது. அழைப்புகளுக்கு அமைப்புகளில் அனுமதிக்கவும்.",
+  "callParticipantCount": "அழைப்பில் {count} பேர்",
+  "@callParticipantCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "messagesSection": "செய்திகள்",
+  "noMessagesFound": "செய்திகள் எதுவும் கிடைக்கவில்லை",
+  "messageSearchFailed": "செய்தி தேடல் இப்போது கிடைக்கவில்லை.",
+  "attachmentUnavailable": "படம் கிடைக்கவில்லை",
+  "attachmentFile": "கோப்பு",
+  "attachmentPhoto": "படம்",
+  "attachmentVideo": "காணொளி",
+  "attachmentAudio": "ஒலி",
+  "attachmentVoice": "குரல் செய்தி",
+  "sendPhoto": "படம்",
+  "sendFile": "கோப்பு",
+  "takePhoto": "கேமரா",
+  "attachmentTooLarge": "இந்தக் கோப்பு அனுப்ப மிகப் பெரியது.",
+  "attachmentSendFailed": "அந்தக் கோப்பை அனுப்ப முடியவில்லை.",
+  "searchConversations": "உரையாடல்களைத் தேடு",
+  "noMatchingConversations": "உங்கள் தேடலுக்குப் பொருந்தும் உரையாடல்கள் இல்லை.",
+  "noMessagesYet": "இன்னும் செய்திகள் இல்லை",
+  "chatListFailed": "சேமிக்கப்பட்ட உரையாடல்களைத் திறக்க முடியவில்லை.",
+  "peopleSearchHint": "பெயர் அல்லது @பயனர்:சேவையகம்",
+  "peopleSearchInstructions": "காட்சிப் பெயர் அல்லது பயனர்பெயர் மூலம் தேட குறைந்தது இரண்டு எழுத்துகளை உள்ளிடுங்கள்.",
+  "noPeopleFound": "பயனர்கள் யாரும் கிடைக்கவில்லை.",
+  "peopleSearchFailed": "பயனர் தேடல் தற்போது கிடைக்கவில்லை. மீண்டும் முயலுங்கள்.",
+  "messageInputHint": "செய்தி",
+  "formatBold": "தடிமன்",
+  "formatItalic": "சாய்வு",
+  "formatStrikethrough": "கோடிட்ட",
+  "formatCode": "நிரல்",
+  "insertEmoji": "சிரிப்பான் சேர்",
+  "emojiSearchHint": "சிரிப்பான் தேடு",
+  "sendMessage": "செய்தியை அனுப்பு",
+  "messageSendFailed": "செய்தியை அனுப்ப முடியவில்லை. உங்கள் உரை மீட்டமைக்கப்பட்டது.",
+  "messageLoadFailed": "இந்த உரையாடலைத் திறக்க முடியவில்லை.",
+  "messagesWaitingToSend": "அனுப்பக் காத்திருக்கும் செய்திகள்",
+  "messagesFailedToSend": "அனுப்ப முடியாத செய்திகள்",
+  "connecting": "இணைக்கிறது…",
+  "synchronizing": "ஒத்திசைக்கிறது…",
+  "online": "இணையத்தில் உள்ளது",
+  "offlineCachedContent": "இணையமில்லை — சேமிக்கப்பட்ட உரையாடல்கள் காட்டப்படுகின்றன",
+  "historyLoadFailed": "பழைய செய்திகளை ஏற்ற முடியவில்லை.",
+  "reply": "பதில்",
+  "react": "எதிர்வினை",
+  "editMessage": "செய்தியைத் திருத்து",
+  "deleteMessage": "செய்தியை நீக்கு",
+  "copyMessage": "நகலெடு",
+  "messageDetails": "செய்தி விவரங்கள்",
+  "reportMessage": "புகாரளி",
+  "deleteForMe": "எனக்கு மட்டும் நீக்கு",
+  "deleteForEveryone": "அனைவருக்கும் நீக்கு",
+  "deleteMessageConfirmation": "இந்தச் செய்தியை எவ்வாறு நீக்க வேண்டும் என்பதைத் தேர்ந்தெடுக்கவும்.",
+  "copiedToClipboard": "செய்தி நகலெடுக்கப்பட்டது.",
+  "edited": "திருத்தப்பட்டது",
+  "messageDeleted": "செய்தி நீக்கப்பட்டது",
+  "replyingTo": "பதிலளிக்கிறது",
+  "editingMessage": "செய்தியைத் திருத்துகிறது",
+  "typing": "தட்டச்சு செய்கிறார்…",
+  "read": "படிக்கப்பட்டது",
+  "chooseReaction": "எதிர்வினையைத் தேர்ந்தெடுக்கவும்",
+  "messageActionFailed": "அந்தச் செய்தி செயலை முடிக்க முடியவில்லை.",
+  "groupNameLabel": "குழுவின் பெயர்",
+  "groupNameHint": "தயாரிப்புக் குழு",
+  "groupDescriptionLabel": "விளக்கம் (விருப்பம்)",
+  "groupDescriptionHint": "இந்தக் குழு எதற்காக?",
+  "groupNameRequired": "குழுவின் பெயரை உள்ளிடுங்கள்.",
+  "groupNameTooLong": "குழுவின் பெயர் அதிகபட்சம் {count} எழுத்துகள் இருக்கலாம்.",
+  "groupDescriptionTooLong": "விளக்கம் அதிகபட்சம் {count} எழுத்துகள் இருக்கலாம்.",
+  "addPeople": "நபர்களைச் சேர்",
+  "selectedCount": "{count} தேர்ந்தெடுக்கப்பட்டது",
+  "memberCount": "{count, plural, =1{1 உறுப்பினர்} other{{count} உறுப்பினர்கள்}}",
+  "creatingGroup": "குழுவை உருவாக்குகிறது…",
+  "groupMemberLimitReached": "ஒரு குழுவில் அதிகபட்சம் {count} நபர்கள் இருக்கலாம்.",
+  "selectAtLeastOneMember": "சேர்க்க குறைந்தது ஒருவரையாவது தேர்ந்தெடுங்கள்.",
+  "groupCreationFailed": "குழுவை உருவாக்க முடியவில்லை. மீண்டும் முயலுங்கள்.",
+  "members": "உறுப்பினர்கள்",
+  "addMembers": "உறுப்பினர்களைச் சேர்",
+  "removeFromGroup": "குழுவிலிருந்து நீக்கு",
+  "removeMemberConfirmation": "{name} என்பவரை இந்தக் குழுவிலிருந்து நீக்கவா?",
+  "remove": "நீக்கு",
+  "leaveGroup": "குழுவிலிருந்து வெளியேறு",
+  "leaveGroupConfirmation": "இந்தக் குழுவிலிருந்து வெளியேறவா? இதன் செய்திகள் உங்களுக்கு வராது.",
+  "leave": "வெளியேறு",
+  "editGroupName": "குழுவின் பெயரைத் திருத்து",
+  "editGroupDescription": "விளக்கத்தைத் திருத்து",
+  "save": "சேமி",
+  "roleAdmin": "நிர்வாகி",
+  "roleModerator": "மட்டுறுத்துநர்",
+  "roleMember": "உறுப்பினர்",
+  "changeRole": "பங்கை மாற்று",
+  "invited": "அழைக்கப்பட்டுள்ளார்",
+  "you": "நீங்கள்",
+  "noGroupDescription": "இன்னும் விளக்கம் இல்லை.",
+  "groupDetailsFailed": "குழு விவரங்களைத் திறக்க முடியவில்லை.",
+  "groupUpdateFailed": "அந்தக் குழு மாற்றத்தைச் சேமிக்க முடியவில்லை.",
+  "groupNotPermitted": "அதைச் செய்ய உங்களுக்கு அனுமதி இல்லை.",
+  "groupNotFound": "இந்தக் குழு இனி கிடைக்கவில்லை.",
+  "invitationsSent": "அழைப்புகள் அனுப்பப்பட்டன.",
+  "myProfile": "என் சுயவிவரம்",
+  "about": "பற்றி",
+  "noAboutYet": "இன்னும் விவரம் இல்லை.",
+  "matrixUsername": "பயனர்பெயர்",
+  "mobileNumber": "கைபேசி எண்",
+  "noMobileNumber": "சேர்க்கப்படவில்லை",
+  "mobileNumberUnverified": "சரிபார்க்கப்படவில்லை",
+  "changePhoto": "படத்தை மாற்று",
+  "removePhoto": "படத்தை நீக்கு",
+  "photoUpdated": "படம் புதுப்பிக்கப்பட்டது.",
+  "photoTooLarge": "அந்தப் படம் மிகப் பெரியது. சிறிய படத்தைத் தேர்ந்தெடுங்கள்.",
+  "photoPickFailed": "அந்தப் படத்தைத் திறக்க முடியவில்லை.",
+  "displayNameRequired": "காட்சிப் பெயரை உள்ளிடுங்கள்.",
+  "aboutTooLong": "விவரம் அதிகபட்சம் {count} எழுத்துகள் இருக்கலாம்.",
+  "profileLoadFailed": "இந்தச் சுயவிவரத்தைத் திறக்க முடியவில்லை.",
+  "profileUpdateFailed": "அந்தச் சுயவிவர மாற்றத்தைச் சேமிக்க முடியவில்லை.",
+  "profileNotFound": "அந்தப் பயனரைக் கண்டறிய முடியவில்லை.",
+  "sendMessageTo": "செய்தி அனுப்பு",
+  "blockUser": "பயனரைத் தடு",
+  "unblockUser": "தடையை நீக்கு",
+  "blockUserConfirmation": "{name} என்பவரைத் தடுக்கவா? அவர்களின் செய்திகள் உங்களுக்குத் தெரியாது, புதிய அரட்டைகளையும் தொடங்க முடியாது.",
+  "block": "தடு",
+  "userBlocked": "பயனர் தடுக்கப்பட்டார்.",
+  "userUnblocked": "பயனர் மீது தடை நீக்கப்பட்டது.",
+  "blockFailed": "அந்தத் தடை மாற்றத்தைச் சேமிக்க முடியவில்லை.",
+  "noBlockedUsers": "நீங்கள் யாரையும் தடுக்கவில்லை.",
+  "noBlockedUsersBody": "நீங்கள் தடுக்கும் நபர்கள் இங்கே தோன்றுவார்கள்; பின்னர் தடையை நீக்கலாம்.",
+  "blockedUsersFailed": "தடுக்கப்பட்ட பயனர்களை ஏற்ற முடியவில்லை.",
+  "blockedMessageHidden": "தடுக்கப்பட்ட பயனரின் செய்தி",
+  "reportUser": "பயனரைப் புகாரளி",
+  "reportCategory": "என்ன பிரச்சினை?",
+  "reportSpam": "தேவையற்ற செய்தி",
+  "reportHarassment": "தொந்தரவு",
+  "reportAbuse": "துஷ்பிரயோகம்",
+  "reportFraud": "மோசடி",
+  "reportInappropriate": "பொருத்தமற்ற உள்ளடக்கம்",
+  "reportOther": "மற்றவை",
+  "reportComment": "வேறு ஏதேனும் தெரிவிக்க வேண்டுமா? (விருப்பம்)",
+  "submitReport": "புகாரைச் சமர்ப்பி",
+  "reportSubmitted": "புகார் சமர்ப்பிக்கப்பட்டது. நன்றி.",
+  "reportFailed": "புகாரைச் சமர்ப்பிக்க முடியவில்லை. மீண்டும் முயலுங்கள்.",
+  "reportCommentTooLong": "கருத்து அதிகபட்சம் {count} எழுத்துகள் இருக்கலாம்.",
+  "alsoBlockUser": "இந்தப் பயனரையும் தடு",
+  "deleteAccount": "கணக்கை நீக்கு",
+  "deleteAccountWarning": "இது உங்கள் டிஜிட்டல்க்ரப் சாட் கணக்கை நிரந்தரமாக நீக்கும். உங்கள் பயனர்பெயரை மீண்டும் பயன்படுத்த முடியாது; சேவையகத்தால் முடிந்தவரை உங்கள் செய்திகள் நீக்கப்படும். இதைத் திரும்பப் பெற முடியாது.",
+  "deleteAccountPasswordPrompt": "உறுதிப்படுத்த உங்கள் கடவுச்சொல்லை உள்ளிடுங்கள்.",
+  "deletingAccount": "கணக்கை நீக்குகிறது…",
+  "deleteAccountFailed": "உங்கள் கணக்கை நீக்க முடியவில்லை. மீண்டும் முயலுங்கள்.",
+  "accountDeleted": "உங்கள் கணக்கு நீக்கப்பட்டது.",
+  "confirmDelete": "நீக்கு",
+  "contentAgreementTitle": "எங்கள் சமூக விதிகள்",
+  "contentAgreementBody": "டிஜிட்டல்க்ரப் சாட்டில் மற்றவர்கள் எழுதும் செய்திகள் இருக்கும். அவமதிப்பு, வெறுப்பு, சட்டவிரோத உள்ளடக்கம் அல்லது மற்றவர்களைத் தொந்தரவு செய்வது அனுமதிக்கப்படாது.",
+  "contentAgreementReport": "இந்த விதிகளை மீறும் எந்தச் செய்தியையும் நபரையும் புகாரளியுங்கள். புகார்களை 24 மணி நேரத்திற்குள் பரிசீலித்து நடவடிக்கை எடுப்போம்.",
+  "contentAgreementBlock": "உங்களுக்கு வேண்டாத நபர்களைத் தடுக்கலாம். அவர்களின் செய்திகள் உடனே உங்கள் செயலியிலிருந்து மறையும்.",
+  "contentAgreementContact": "கேள்விகள் அல்லது கவலைகள்: {email}",
+  "contentAgreementAccept": "ஒப்புக்கொள்கிறேன்",
+  "contentAgreementDecline": "இப்போது வேண்டாம்",
+  "rulesConsent": "சமூக விதிகளை ஏற்கிறேன்",
+  "rulesConsentRead": "சமூக விதிகளைப் படிக்கவும்",
+  "contentAgreementRequired": "செய்திகளை அனுப்பும் முன் சமூக விதிகளை ஏற்க வேண்டும்.",
+  "invitedYou": "{name} உங்களை அரட்டைக்கு அழைத்துள்ளார்",
+  "invitedYouGeneric": "நீங்கள் அரட்டைக்கு அழைக்கப்பட்டுள்ளீர்கள்",
+  "acceptInvite": "ஏற்றுக்கொள்",
+  "declineInvite": "நிராகரி",
+  "declineInviteConfirmation": "இந்த அழைப்பை நிராகரிக்கவா? அவர்களின் செய்திகள் உங்களுக்குத் தெரியாது.",
+  "inviteAccepted": "அழைப்பு ஏற்கப்பட்டது.",
+  "inviteDeclined": "அழைப்பு நிராகரிக்கப்பட்டது.",
+  "inviteActionFailed": "அந்த அழைப்பைப் புதுப்பிக்க முடியவில்லை. மீண்டும் முயலுங்கள்.",
+  "newMessageNotification": "புதிய செய்தி",
+  "newMessage": "புதிய செய்தி",
+  "selectConversationTitle": "ஒரு உரையாடலைத் தேர்ந்தெடுங்கள்",
+  "selectConversationBody": "பட்டியலிலிருந்து ஒன்றைத் தேர்வுசெய்யுங்கள், அல்லது புதிதாக ஒன்றைத் தொடங்குங்கள்.",
+  "userManagement": "பயனர் மேலாண்மை",
+  "inviteCodeLabel": "அழைப்புக் குறியீடு",
+  "inviteCodeHint": "உங்கள் நிர்வாகியிடம் குறியீடு கேட்கவும். Digitalgrub Chat அழைப்பு மூலம் மட்டுமே.",
+  "invalidInviteCode": "அந்த அழைப்புக் குறியீடு செல்லாது அல்லது ஏற்கனவே பயன்படுத்தப்பட்டது.",
+  "refresh": "புதுப்பிக்க",
+  "userManagementCount": "{total} கணக்குகள்",
+  "forwardMessage": "பகிர்",
+  "forwardTo": "யாருக்குப் பகிர",
+  "forwarded": "பகிரப்பட்டது",
+  "forwardNoChats": "பகிர வேறு அரட்டைகள் இல்லை.",
+  "forwardedLabel": "பகிரப்பட்டது",
+  "pinMessage": "பின் செய்",
+  "unpinMessage": "பின் நீக்கு",
+  "pinnedMessage": "பின் செய்யப்பட்ட செய்தி",
+  "pinnedCount": "பின் செய்யப்பட்டவை {index} / {total}",
+  "@pinnedCount": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "pinNotAllowed": "இந்த அரட்டையில் செய்திகளைப் பின் செய்ய உங்களுக்கு அனுமதி இல்லை. குழு நிர்வாகியை அணுகவும்.",
+  "pinFailed": "பின் செய்யப்பட்ட செய்திகளை மாற்ற முடியவில்லை. மீண்டும் முயலவும்.",
+  "enableNotificationsPrompt": "இந்த தாவல் பின்னணியில் இருக்கும்போது செய்தி வந்தால் அறிவிப்பு பெறுங்கள்.",
+  "enableNotifications": "இயக்கு",
+  "notificationsBlocked": "இந்த தளத்திற்கான அறிவிப்புகளை உங்கள் உலாவி தடுக்கிறது. அதன் தள அமைப்புகளில் இயக்கவும்.",
+  "dismiss": "நிராகரி",
+  "returnToCall": "உங்கள் அழைப்புக்குத் திரும்ப தட்டவும்",
+  "onACallNow": "இப்போது அழைப்பில் உள்ளார்",
+  "joinCall": "இணை",
+  "liveCallParticipants": "அழைப்பில் {count} பேர்",
+  "@liveCallParticipants": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "callStartedBy": "{name} அழைப்பைத் தொடங்கினார்",
+  "@callStartedBy": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "youStartedCall": "நீங்கள் அழைப்பைத் தொடங்கினீர்கள்",
+  "missedCall": "தவறிய அழைப்பு",
+  "callBack": "திரும்ப அழை",
+  "someoneInCall": "ஒருவர் அழைப்பில் உள்ளார் — இணைய தட்டவும்",
+  "messageActions": "மேலும்",
+  "meetGuestTitle": "இந்த சந்திப்பில் இணையுங்கள்",
+  "meetGuestNameLabel": "உங்கள் பெயர்",
+  "meetJoinAsGuest": "சந்திப்பில் இணை",
+  "meetSignInInstead": "பதிலாக உள்நுழையவும்",
+  "incomingCall": "உள்வரும் அழைப்பு",
+  "groupActivity": "செயல்பாடு",
+  "groupActivityEmpty": "இங்கு இன்னும் எதுவும் நடக்கவில்லை.",
+  "activityCreated": "{name} குழுவை உருவாக்கினார்",
+  "@activityCreated": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "activityJoined": "{name} இணைந்தார்",
+  "@activityJoined": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "activityLeft": "{name} வெளியேறினார்",
+  "@activityLeft": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "activityInvited": "{name} {target}-ஐ அழைத்தார்",
+  "@activityInvited": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "target": {
+        "type": "String"
+      }
+    }
+  },
+  "activityRemoved": "{name} {target}-ஐ நீக்கினார்",
+  "@activityRemoved": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "target": {
+        "type": "String"
+      }
+    }
+  },
+  "activityRenamed": "{name} குழுவிற்கு “{detail}” எனப் பெயரிட்டார்",
+  "@activityRenamed": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "detail": {
+        "type": "String"
+      }
+    }
+  },
+  "activityPhotoChanged": "{name} குழுப் படத்தை மாற்றினார்",
+  "@activityPhotoChanged": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "activityCallStarted": "{name} அழைப்பைத் தொடங்கினார்",
+  "@activityCallStarted": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "activityPinsChanged": "{name} பின் செய்யப்பட்ட செய்திகளை மாற்றினார்",
+  "@activityPinsChanged": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "activityRolesChanged": "{name} உறுப்பினர் பங்குகளை மாற்றினார்",
+  "@activityRolesChanged": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "resetPasswordTitle": "கடவுச்சொல்லை மீட்டமைக்கவும்",
+  "resetPasswordSubtitle": "உங்கள் கணக்கின் மின்னஞ்சல் முகவரியை உள்ளிடவும்; இணைப்பை அனுப்புவோம்.",
+  "emailAddress": "மின்னஞ்சல் முகவரி",
+  "emailValidation": "சரியான மின்னஞ்சல் முகவரியை உள்ளிடவும்",
+  "sendResetLink": "மீட்டமைப்பு இணைப்பை அனுப்பு",
+  "sendingResetLink": "அனுப்புகிறது…",
+  "resetLinkSentTitle": "மின்னஞ்சலைப் பாருங்கள்",
+  "resetLinkSentBody": "{email} ஒரு கணக்கில் இருந்தால், இணைப்பு வந்துகொண்டிருக்கிறது. அதைத் திறந்து, திரும்பி வந்து புதிய கடவுச்சொல்லை அமைக்கவும்.",
+  "@resetLinkSentBody": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "resendResetLink": "மீண்டும் அனுப்பு",
+  "resetLinkResent": "மீண்டும் அனுப்பப்பட்டது. வர ஒரு நிமிடம் ஆகலாம்.",
+  "newPassword": "புதிய கடவுச்சொல்",
+  "confirmNewPassword": "புதிய கடவுச்சொல்லை உறுதிப்படுத்தவும்",
+  "passwordsDoNotMatch": "இரண்டு கடவுச்சொற்களும் வேறுபடுகின்றன",
+  "setNewPassword": "புதிய கடவுச்சொல்லை அமை",
+  "passwordResetDone": "கடவுச்சொல் மாற்றப்பட்டது. புதியதைக் கொண்டு உள்நுழையவும்.",
+  "emailNotVerified": "முதலில் மின்னஞ்சலில் உள்ள இணைப்பைத் திறக்கவும், பிறகு முயற்சிக்கவும்.",
+  "emailNotConfigured": "இந்தச் சேவையகம் இன்னும் மின்னஞ்சல் அனுப்ப முடியாது. நிர்வாகியிடம் மீட்டமைக்கச் சொல்லுங்கள்.",
+  "emailInUse": "அந்த முகவரியை வேறொரு கணக்கு ஏற்கனவே பயன்படுத்துகிறது.",
+  "emailAddresses": "மின்னஞ்சல் முகவரி",
+  "emailAddressesSubtitle": "கடவுச்சொல்லை மீட்டமைக்க மட்டுமே பயன்படும்",
+  "noEmailAddress": "இன்னும் மின்னஞ்சல் முகவரி இல்லை. இல்லாவிட்டால், நிர்வாகி மட்டுமே கடவுச்சொல்லை மீட்டமைக்க முடியும்.",
+  "addEmailAddress": "மின்னஞ்சல் முகவரியைச் சேர்",
+  "removeEmailAddress": "நீக்கு",
+  "emailAddressAdded": "மின்னஞ்சல் முகவரி சேர்க்கப்பட்டது.",
+  "emailAddressRemoved": "மின்னஞ்சல் முகவரி நீக்கப்பட்டது.",
+  "confirmWithPassword": "உங்கள் கடவுச்சொல்லால் உறுதிப்படுத்தவும்",
+  "currentPassword": "தற்போதைய கடவுச்சொல்",
+  "verifyEmailSent": "{email} க்கு இணைப்பு அனுப்பப்பட்டது. அதைத் திறந்து, கீழே உறுதிப்படுத்தவும்.",
+  "@verifyEmailSent": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "confirmEmail": "இணைப்பைத் திறந்துவிட்டேன்",
+  "callFullScreen": "முழுத்திரை",
+  "callExitFullScreen": "முழுத்திரையிலிருந்து வெளியேறு",
+  "callChat": "அரட்டை",
+  "callCloseChat": "அரட்டையை மூடு",
+  "callRaiseHand": "கை உயர்த்து",
+  "callLowerHand": "கையை இறக்கு",
+  "callPeople": "பங்கேற்பாளர்கள்",
+  "callMute": "ஒலியடக்கு",
+  "callMuteAll": "அனைவரையும் ஒலியடக்கு",
+  "callHandRaised": "கை உயர்த்தப்பட்டது",
+  "callYou": "{name} (நீங்கள்)",
+  "@callYou": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "adminNewUser": "புதிய பயனர்",
+  "adminNewUserTitle": "கணக்கை உருவாக்கு",
+  "adminNewUserHint": "இந்தப் பயனர்பெயர் மற்றும் கடவுச்சொல்லால் அவர்கள் உள்நுழைவார்கள். கடவுச்சொல்லை நீங்களே அவர்களிடம் சொல்லுங்கள்; அது எங்கும் அனுப்பப்படாது.",
+  "adminCreateUser": "உருவாக்கு",
+  "adminUserCreated": "கணக்கு உருவாக்கப்பட்டது: {userId}",
+  "adminResetPassword": "கடவுச்சொல்லை மீட்டமை",
+  "adminResetPasswordTitle": "{name} க்கான கடவுச்சொல்லை மீட்டமை",
+  "adminResetPasswordHint": "அவர்களின் எல்லா அமர்வுகளும் வெளியேற்றப்படும். புதிய கடவுச்சொல்லை நீங்களே சொல்லுங்கள்.",
+  "adminPasswordReset": "கடவுச்சொல் மீட்டமைக்கப்பட்டது. அவர்களின் அமர்வுகள் வெளியேற்றப்பட்டன.",
+  "adminNotAdmin": "சேவையக நிர்வாகி மட்டுமே இதைச் செய்ய முடியும். நிர்வாகக் கணக்கில் மீண்டும் உள்நுழையவும்.",
+  "adminUsernameTaken": "அந்தப் பயனர்பெயர் ஏற்கனவே உள்ளது.",
+  "adminAccountOnServer": "நிர்வாகக் கணக்குகள் சேவையகத்தில் மட்டுமே மீட்டமைக்கப்படும்.",
+  "adminUserNotFound": "அந்தப் பயனர்பெயரில் கணக்கு இல்லை.",
+  "adminUnavailable": "இந்த உருவாக்கத்தில் நிர்வாக செயல்கள் முடக்கப்பட்டுள்ளன.",
+  "adminActions": "மேலும்",
+  "@adminUserCreated": {
+    "placeholders": {
+      "userId": {
+        "type": "String"
+      }
+    }
+  },
+  "@adminResetPasswordTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "presenceOnline": "இணைப்பில்",
+  "presenceLastSeen": "கடைசியாக {when}",
+  "@presenceLastSeen": {
+    "placeholders": {
+      "when": {
+        "type": "String"
+      }
+    }
+  },
+  "meet": "மீட்",
+  "joinWithCode": "குறியீட்டால் சேர்",
+  "meetingCodeHint": "கூட்ட இணைப்பு அல்லது குறியீட்டை ஒட்டவும்",
+  "meetingCodeInvalid": "அது கூட்ட இணைப்போ குறியீடோ அல்ல.",
+  "shareLink": "பகிர்",
+  "joinMeeting": "சேர்"
+}

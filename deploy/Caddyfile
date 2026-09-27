@@ -1,0 +1,52 @@
+{
+	email {$CADDY_ACME_EMAIL}
+
+	log default {
+		output stdout
+		format json
+	}
+
+	servers {
+		max_header_size 1MB
+	}
+}
+
+{$MATRIX_PUBLIC_HOST} {
+	encode zstd gzip
+
+	header {
+		-Server
+		X-Content-Type-Options nosniff
+		Referrer-Policy no-referrer
+		Permissions-Policy "camera=(), microphone=(), geolocation=()"
+	}
+
+	@clientDiscovery path /.well-known/matrix/client
+	handle @clientDiscovery {
+		header Content-Type application/json
+		header Access-Control-Allow-Origin "*"
+		respond `{"m.homeserver":{"base_url":"https://{$MATRIX_PUBLIC_HOST}"}}` 200
+	}
+
+	@pushGateway path /_matrix/push/v1/notify
+	handle @pushGateway {
+		request_body {
+			max_size 1MB
+		}
+		reverse_proxy sygnal:5000
+	}
+
+	@matrixClient path /_matrix/* /_synapse/client/*
+	handle @matrixClient {
+		request_body {
+			max_size 6MB
+		}
+		reverse_proxy synapse:8008
+	}
+
+	handle /health {
+		reverse_proxy synapse:8008
+	}
+
+	respond 404
+}
